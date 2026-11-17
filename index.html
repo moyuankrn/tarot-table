@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17232a">
+  <title>一张牌 · Tarot Table</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-head">
+      <a class="brand" href="./" aria-label="回到首页"><span class="brand-mark">✦</span><span>TAROT<br><small>TABLE</small></span></a>
+      <span class="head-note">给今天留一点想象的空间</span>
+      <span class="head-date" id="today-label"></span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">A LITTLE RITUAL FOR YOURSELF</p>
+        <h1 id="page-title">慢一点，<em>抽一张牌。</em></h1>
+        <p class="intro-copy">想一个问题，或者只是看看今天会出现什么。牌面给你一个角度，答案仍由你决定。</p>
+      </section>
+
+      <section class="workspace" aria-label="抽牌桌面">
+        <div class="section-heading"><span>01 / 选择牌阵</span><small>四种方式 · 一副牌</small></div>
+        <div class="spread-tabs" id="spread-tabs" role="tablist" aria-label="选择牌阵"></div>
+        <div class="table" id="table" aria-live="polite"></div>
+      </section>
+
+      <section class="archive" aria-labelledby="archive-title">
+        <div class="section-heading"><span id="archive-title">02 / 最近的牌</span><small>只保存在这台浏览器</small></div>
+        <div id="history" class="history-list"></div>
+      </section>
+    </main>
+
+    <footer><span>一张牌，是提问的另一种方式。</span><span>牌面绘制：Pamela Colman Smith · 1909<br><a href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies)" target="_blank" rel="noopener noreferrer">Public domain scans · Wikimedia Commons ↗</a></span></footer>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
